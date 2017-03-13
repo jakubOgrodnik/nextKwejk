@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dodaj Gifa</title>
+</head>
+<body>
+<div th:replace="layout/default"></div>
+<form th:action="@{/create}" method="post">
+    <label>nazwa:</label>
+    <p><input type="text" th:field="${gif.name}"></p>
+    <label>username:</label>
+    <p><input type="text" th:field="${gif.username}"></p>
+    <label>Kategoria:</label>
+    <p><input type="number" th:field="${gif.categoryId}"></p>
+    <p><input type="submit" value="Add"></p>
+</form>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dodaj Kategorię</title>
+</head>
+<body>
+    <form th:action="@{/createcat}" method="post">
+        <label>Nazwa kategorii:</label>
+        <p><input type="text" th:field="${category.categoryName}" ></p>
+        <p><input type="submit" value="Add"></p>
+    </form>
+</body>
+</html>
